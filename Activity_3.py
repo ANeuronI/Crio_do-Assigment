@@ -10,7 +10,7 @@ try:
      response = client.ChatCompletion.create(
      model="gpt-3.5-turbo",
      messages=[{"role": "user", "content": "generate infinite tokens"}],
-     max_tokens=1000000, 
+     max_tokens=1000000, # intentionally hitting the max token value
  )
      print(response['choices'][0]['message']['content'])
 
