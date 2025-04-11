@@ -29,8 +29,8 @@ def fetch_unsplash_image(query):
 # Step 3: Convert blog text to audio using OpenAI TTS
 def convert_to_audio(blog_text, output_file="blog_audio.mp3"):
     speech_response = openai.Audio.speech.create(
-        model="tts-1",
-        voice="nova",
+        model="gpt-4o-mini-tts",
+        voice="coral",
         input=blog_text
     )
     with open(output_file, "wb") as f:
