@@ -1,5 +1,5 @@
 # Crio_do-Assigment
-This Repo contain codes from the Crio.do GenAI API assignment.
+This Repo contain codes from the Crio.do GenAI API assignment.<br>
 This is focused on exploring and learning about GenAI APIs using **OpenAI's API** suite (Text, Image, and Audio).
 
 ---
@@ -15,5 +15,5 @@ To understand and demonstrate:
 
 ---
 
-This project is a part of Crio.Do GenAI API Assignment.
+This project is a part of Crio.Do GenAI API Assignment.<br>
 If you're reviewing this as a mentor, feel free to explore each .py file and demo output.
