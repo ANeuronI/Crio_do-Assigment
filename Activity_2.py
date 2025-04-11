@@ -18,7 +18,7 @@ import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY") # it will load variable name `OPENAI_API_KEY` from .env file
 
 try:
     response = openai.ChatCompletion.create(
