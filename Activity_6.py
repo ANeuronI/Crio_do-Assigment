@@ -1,3 +1,9 @@
+# we will create an automated content genration for blog platform --->
+# it will first genrate the blog text from gpt-4
+# then it will get the image from unsplash 
+# then it will create audio file for the text that was genrated in previous step
+# then it will format all together
+
 import openai
 import requests
 import os
