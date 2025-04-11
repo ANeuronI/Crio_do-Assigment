@@ -1,6 +1,8 @@
 import openai
 
-openai.api_key = "sk-invalid-key" 
+# simulating invalid api-key error
+
+openai.api_key = "sk-invalid-key" # intentionally taking wrong api-key
 
 try:
     response = openai.ChatCompletion.create(
@@ -8,11 +10,11 @@ try:
         messages=[{"role": "user", "content": "Hello!"}]
     )
 except openai.error.AuthenticationError as e:
-    print("🔐 Invalid API key. Please check your credentials.")
+    print(f"🔐 Invalid API key. Please check your credentials.{e}") 
 
 
 # we should use valid api-keys to get response, 
-# below code will show case how to load api key from environment variable
+# below code will show case how to load api key from environment variable for secure usage
 import os
 import openai
 from dotenv import load_dotenv
